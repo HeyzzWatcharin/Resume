@@ -4,4 +4,6 @@ html, body, #__next {
   height: 100%;
   font-family: Arial, sans-serif;
   overflow: hidden;
+  background: #333;
+  color: #fff;
 }

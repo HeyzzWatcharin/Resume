@@ -11,6 +11,8 @@
   padding: 50px;
   box-sizing: border-box;
   transition: transform 0.5s;
+  background: #333;
+  color: #fff;
 }
 
 .section:nth-child(1) { background: #f44336; }
@@ -23,4 +25,10 @@
   bottom: 20px;
   transition: left 0.5s;
   font-size: 2rem;
+  animation: run 0.8s steps(2) infinite;
+}
+
+@keyframes run {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }

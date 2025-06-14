@@ -2,6 +2,22 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 
 const sections = [
+  {
+    id: 'about',
+    title: 'About',
+    content:
+      "I'm a web developer who loves 2D games and playful interfaces like this one.",
+  },
+  {
+    id: 'skills',
+    title: 'Skills',
+    content: 'TypeScript, Next.js, CSS Animations, Game Development',
+  },
+  {
+    id: 'experience',
+    title: 'Experience',
+    content: '3+ years creating interactive web experiences.',
+  },
   { id: 'about', title: 'About', content: 'This is a demo interactive resume.' },
   { id: 'skills', title: 'Skills', content: 'TypeScript, React, Next.js, CSS' },
   { id: 'experience', title: 'Experience', content: '5+ years building web apps' },
@@ -23,6 +39,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.character} style={{ left: `${position * 25}%` }}>
+        🧑
         🚀
       </div>
       {sections.map((sec, i) => (
