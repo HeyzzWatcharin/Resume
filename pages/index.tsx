@@ -18,6 +18,9 @@ const sections = [
     title: 'Experience',
     content: '3+ years creating interactive web experiences.',
   },
+  { id: 'about', title: 'About', content: 'This is a demo interactive resume.' },
+  { id: 'skills', title: 'Skills', content: 'TypeScript, React, Next.js, CSS' },
+  { id: 'experience', title: 'Experience', content: '5+ years building web apps' },
   { id: 'contact', title: 'Contact', content: 'email@example.com' },
 ];
 
@@ -36,7 +39,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.character} style={{ left: `${position * 25}%` }}>
-        🧑‍🔧
+        🧑
+        🚀
       </div>
       {sections.map((sec, i) => (
         <section key={sec.id} className={styles.section} style={{ transform: `translateX(${(i - position) * 100}%)` }}>
